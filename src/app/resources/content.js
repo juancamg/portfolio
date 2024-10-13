@@ -1,19 +1,20 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-    firstName: 'Selene',
-    lastName:  'Yu',
+    firstName: 'Juan Carlos',
+    lastName:  'Maceras Garcia',
+    alias: 'Juancamg',
     get name() {
         return `${this.firstName} ${this.lastName}`;
     },
-    role:      'Design Engineer',
+    role:      'Experto en Ciberseguridad',
     avatar:    '/images/avatar.jpg',
     location:  'Asia/Jakarta',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-    languages: ['English', 'Bahasa']  // optional: Leave the array empty if you don't want to display languages
+    languages: ['Spanish', 'English']  // optional: Leave the array empty if you don't want to display languages
 }
 
 const newsletter = {
-    display: true,
+    display: false,
     title: <>Subscribe to {person.firstName}'s Newsletter</>,
     description: <>I occasionally write about design, technology, and share thoughts on the intersection of creativity and engineering.</>
 }
@@ -24,12 +25,12 @@ const social = [
     {
         name: 'GitHub',
         icon: 'github',
-        link: 'https://github.com/once-ui-system/nextjs-starter',
+        link: 'https://github.com/juancamg',
     },
     {
         name: 'LinkedIn',
         icon: 'linkedin',
-        link: 'https://www.linkedin.com/company/once-ui/',
+        link: 'https://www.linkedin.com/in/juancarlosmacerasgarcia/',
     },
     {
         name: 'X',
@@ -39,16 +40,16 @@ const social = [
     {
         name: 'Email',
         icon: 'email',
-        link: 'mailto:example@gmail.com',
+        link: 'mailto:juancarlosmaceras@gmail.com',
     },
 ]
 
 const home = {
     label: 'Home',
-    title: `${person.name}'s Portfolio`,
+    title: `${person.alias}`,
     description: `Portfolio website showcasing my work as a ${person.role}`,
-    headline: <>Design engineer and builder</>,
-    subline: <>I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive<br/> user experiences. After hours, I build my own projects.</>
+    headline: <>Hacker ético y experto en Ciberseguridad</>,
+    subline: <>Buenas buenas, soy juan carlitos</>
 }
 
 const about = {
@@ -69,10 +70,10 @@ const about = {
     intro: {
         display: true,
         title: 'Introduction',
-        description: <>Selene is a Jakarta-based design engineer with a passion for transforming complex challenges into simple, elegant design solutions. Her work spans digital interfaces, interactive experiences, and the convergence of design and technology.</>
+        description: <>Soy Juan Carlos M. un hacerk de gran éxito. Yo hackeé Amazon, Facebook, NASA y Universidad de Huelva</>
     },
     work: {
-        display: true, // set to false to hide this section
+        display: false, // set to false to hide this section
         title: 'Work Experience',
         experiences: [
             {
@@ -105,7 +106,7 @@ const about = {
         ]
     },
     studies: {
-        display: true, // set to false to hide this section
+        display: false, // set to false to hide this section
         title: 'Studies',
         institutions: [
             {
@@ -119,7 +120,7 @@ const about = {
         ]
     },
     technical: {
-        display: true, // set to false to hide this section
+        display: false, // set to false to hide this section
         title: 'Technical skills',
         skills: [
             {
